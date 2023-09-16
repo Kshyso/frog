@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://ljgg56e5oy6i"]
+
+[ext_resource type="Material" path="res://road.tres" id="1_lhgsq"]
+[ext_resource type="PackedScene" uid="uid://dqlsjkajyug1c" path="res://character.tscn" id="1_nsjsj"]
+
+[node name="Node3D" type="Node3D"]
+
+[node name="CSGBox3D" type="CSGBox3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.1, 0)
+use_collision = true
+size = Vector3(13.2538, 0.201374, 11.5519)
+material = ExtResource("1_lhgsq")
+
+[node name="Character" parent="." instance=ExtResource("1_nsjsj")]
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(0.776388, 0.370935, -0.509538, 0, 0.808463, 0.588547, 0.630256, -0.456941, 0.62768, 0, 2.51985, 0)
