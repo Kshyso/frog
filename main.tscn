@@ -1,17 +1,21 @@
-[gd_scene load_steps=5 format=3 uid="uid://ljgg56e5oy6i"]
+[gd_scene load_steps=7 format=3 uid="uid://ljgg56e5oy6i"]
 
-[ext_resource type="Material" uid="uid://b5y8bqgeq7xdl" path="res://tile.tres" id="1_34lqt"]
 [ext_resource type="PackedScene" uid="uid://dqlsjkajyug1c" path="res://character.tscn" id="1_nsjsj"]
+[ext_resource type="Material" uid="uid://bxpnxmvvn7yxi" path="res://sidewalk.tres" id="1_t6agm"]
+[ext_resource type="Material" uid="uid://dci6t1m4d167y" path="res://road.tres" id="2_ojl8c"]
 [ext_resource type="PackedScene" uid="uid://cnqe2y5u7nnbj" path="res://zaba.blend" id="3_x4svn"]
+[ext_resource type="PackedScene" uid="uid://bonpfd45ebno2" path="res://door.blend" id="4_t0ly1"]
 
 [sub_resource type="Environment" id="Environment_g45kg"]
 background_mode = 1
+background_color = Color(0.0196078, 0.0156863, 0.0196078, 1)
 ambient_light_source = 2
 ambient_light_color = Color(0.411765, 0.411765, 0.411765, 1)
-ambient_light_energy = 0.01
+ambient_light_energy = 0.1
 tonemap_mode = 2
 tonemap_exposure = 0.35
 tonemap_white = 0.4
+ssr_enabled = true
 ssao_enabled = true
 ssil_enabled = true
 sdfgi_enabled = true
@@ -20,11 +24,23 @@ volumetric_fog_albedo = Color(0.384314, 0.384314, 0.384314, 1)
 
 [node name="Node3D" type="Node3D"]
 
-[node name="CSGBox3D" type="CSGBox3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.1, 0)
+[node name="CSGBox3D3" type="CSGBox3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 0.1, 0)
 use_collision = true
-size = Vector3(24, 0.201374, 22)
-material = ExtResource("1_34lqt")
+size = Vector3(4, 0.201374, 22)
+material = ExtResource("1_t6agm")
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0.1, 0)
+use_collision = true
+size = Vector3(4, 0.201374, 22)
+material = ExtResource("1_t6agm")
+
+[node name="CSGBox3D" type="CSGBox3D" parent="."]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, -0.1, 0)
+use_collision = true
+size = Vector3(22, 0.201374, 8)
+material = ExtResource("2_ojl8c")
 
 [node name="Character" parent="." instance=ExtResource("1_nsjsj")]
 
@@ -32,4 +48,7 @@ material = ExtResource("1_34lqt")
 environment = SubResource("Environment_g45kg")
 
 [node name="zaba" parent="." instance=ExtResource("3_x4svn")]
-transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 4, -6)
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 8, 4, 0)
+
+[node name="door" parent="." instance=ExtResource("4_t0ly1")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 8, 0.2, -1.5)
