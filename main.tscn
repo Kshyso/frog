@@ -1,11 +1,8 @@
-[gd_scene load_steps=9 format=3 uid="uid://ljgg56e5oy6i"]
+[gd_scene load_steps=5 format=3 uid="uid://ljgg56e5oy6i"]
 
 [ext_resource type="PackedScene" uid="uid://dqlsjkajyug1c" path="res://character.tscn" id="1_nsjsj"]
 [ext_resource type="Material" uid="uid://bxpnxmvvn7yxi" path="res://sidewalk.tres" id="1_t6agm"]
 [ext_resource type="Material" uid="uid://dci6t1m4d167y" path="res://road.tres" id="2_ojl8c"]
-[ext_resource type="PackedScene" uid="uid://cnqe2y5u7nnbj" path="res://zaba.blend" id="3_x4svn"]
-[ext_resource type="Texture2D" uid="uid://cxoitxmxmots5" path="res://addons/kenney_prototype_textures/light/texture_01.png" id="4_8go7e"]
-[ext_resource type="Material" uid="uid://2imy3l0c0pxw" path="res://test.tres" id="4_f5ts2"]
 
 [sub_resource type="Environment" id="Environment_g45kg"]
 tonemap_white = 0.4
@@ -13,110 +10,12 @@ sdfgi_enabled = true
 volumetric_fog_density = 0.1
 volumetric_fog_albedo = Color(0.304, 0.38, 0.304, 1)
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_vycru"]
-albedo_texture = ExtResource("4_8go7e")
-
 [node name="Node3D" type="Node3D"]
 
 [node name="Character" parent="." instance=ExtResource("1_nsjsj")]
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_g45kg")
-
-[node name="Node3D" type="Node3D" parent="."]
-
-[node name="zaba" parent="Node3D" instance=ExtResource("3_x4svn")]
-transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 8, 4.5, 0)
-
-[node name="Node3D" type="Node3D" parent="Node3D"]
-
-[node name="CSGBox3D" type="CSGBox3D" parent="Node3D/Node3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12.875, 0.2, 1.375)
-use_collision = true
-size = Vector3(9.75, 0.4, 9.75)
-material = ExtResource("4_f5ts2")
-
-[node name="CSGBox3D8" type="CSGBox3D" parent="Node3D/Node3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12.875, 6.2, 1.375)
-use_collision = true
-size = Vector3(9.75, 0.4, 9.75)
-material = ExtResource("4_f5ts2")
-
-[node name="CSGBox3D2" type="CSGBox3D" parent="Node3D/Node3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13.2031, 3.23047, -3.75)
-use_collision = true
-size = Vector3(9.46875, 6.21094, 0.5)
-material = ExtResource("4_f5ts2")
-
-[node name="CSGBox3D3" type="CSGBox3D" parent="Node3D/Node3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13.2034, 3.24036, 6.5)
-use_collision = true
-size = Vector3(9.46875, 6.23047, 0.5)
-material = ExtResource("4_f5ts2")
-
-[node name="CSGBox3D4" type="CSGBox3D" parent="Node3D/Node3D"]
-transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 17.969, 3.23059, 1.5)
-use_collision = true
-size = Vector3(9.9375, 6.21094, 0.5)
-material = ExtResource("4_f5ts2")
-
-[node name="CSGBox3D5" type="CSGBox3D" parent="Node3D/Node3D"]
-transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 8.25, 3.2305, 2.95)
-use_collision = true
-size = Vector3(7.5, 6.211, 0.5)
-material = ExtResource("4_f5ts2")
-
-[node name="CSGBox3D6" type="CSGBox3D" parent="Node3D/Node3D"]
-transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 8.25, 4.767, -2.4)
-use_collision = true
-size = Vector3(3.2, 3.2, 0.5)
-material = ExtResource("4_f5ts2")
-
-[node name="CSGBox3D7" type="CSGBox3D" parent="Node3D/Node3D"]
-transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 8.25, 1.792, -3.25)
-use_collision = true
-size = Vector3(1.5, 3.45, 0.5)
-material = ExtResource("4_f5ts2")
-
-[node name="Node3D" type="Node3D" parent="Node3D/Node3D"]
-
-[node name="CSGBox3D" type="CSGBox3D" parent="Node3D/Node3D/Node3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11, 2, -0.75)
-use_collision = true
-size = Vector3(1, 3, 3.5)
-material = SubResource("StandardMaterial3D_vycru")
-
-[node name="CSGBox3D2" type="CSGBox3D" parent="Node3D/Node3D/Node3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 2, -0.75)
-use_collision = true
-size = Vector3(1, 3, 3.5)
-material = SubResource("StandardMaterial3D_vycru")
-
-[node name="CSGBox3D3" type="CSGBox3D" parent="Node3D/Node3D/Node3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 17, 2, -0.75)
-use_collision = true
-size = Vector3(1, 3, 3.5)
-material = SubResource("StandardMaterial3D_vycru")
-
-[node name="SpotLight3D" type="SpotLight3D" parent="Node3D/Node3D"]
-transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 10.4281, 6, -1)
-light_energy = 10.0
-spot_range = 7.0
-
-[node name="SpotLight3D3" type="SpotLight3D" parent="Node3D/Node3D"]
-transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 10.4281, 6, 3)
-light_energy = 10.0
-spot_range = 7.0
-
-[node name="SpotLight3D2" type="SpotLight3D" parent="Node3D/Node3D"]
-transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 15.4281, 6, -1)
-light_energy = 10.0
-spot_range = 7.0
-
-[node name="SpotLight3D4" type="SpotLight3D" parent="Node3D/Node3D"]
-transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 15.4281, 6, 3)
-light_energy = 10.0
-spot_range = 7.0
 
 [node name="Node3D2" type="Node3D" parent="."]
 
