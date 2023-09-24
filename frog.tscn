@@ -1,12 +1,17 @@
-[gd_scene load_steps=6 format=3 uid="uid://cxgvsqwmg40du"]
+[gd_scene load_steps=8 format=3 uid="uid://cxgvsqwmg40du"]
 
 [ext_resource type="PackedScene" uid="uid://cnqe2y5u7nnbj" path="res://zaba.blend" id="1_24mqf"]
 [ext_resource type="Material" uid="uid://2imy3l0c0pxw" path="res://materials/test.tres" id="2_cqnuq"]
-[ext_resource type="Texture2D" uid="uid://jgtl70er788" path="res://addons/kenney_prototype_textures/red/texture_01.png" id="3_kqa5o"]
+[ext_resource type="Texture2D" uid="uid://k0rqsuubxqbs" path="res://addons/kenney_prototype_textures/light/texture_08.png" id="3_iw7cj"]
+[ext_resource type="Texture2D" uid="uid://dunlbpwh27obd" path="res://addons/kenney_prototype_textures/dark/texture_01.png" id="3_s5bo6"]
 [ext_resource type="PackedScene" uid="uid://bonpfd45ebno2" path="res://door.blend" id="4_1nn3i"]
 
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_r2i6s"]
+albedo_texture = ExtResource("3_s5bo6")
+uv1_triplanar = true
+
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_krvhe"]
-albedo_texture = ExtResource("3_kqa5o")
+albedo_texture = ExtResource("3_iw7cj")
 uv1_triplanar = true
 
 [node name="Node3D" type="Node3D"]
@@ -24,53 +29,53 @@ size = Vector3(11, 1, 12)
 material = ExtResource("2_cqnuq")
 
 [node name="CSGBox3D10" type="CSGBox3D" parent="Node3D"]
-transform = Transform3D(-4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0, 1, 10.5, -2.5, 1.5)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.5, -2, 1.5)
 use_collision = true
-size = Vector3(6, 1, 11)
+size = Vector3(1, 5, 11)
 material = ExtResource("2_cqnuq")
 
 [node name="CSGBox3D13" type="CSGBox3D" parent="Node3D"]
-transform = Transform3D(-4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0, 1, 0.5, -2, 3)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5, -2, 3)
 use_collision = true
-size = Vector3(5, 1, 8)
+size = Vector3(1, 5, 8)
 material = ExtResource("2_cqnuq")
 
 [node name="CSGBox3D14" type="CSGBox3D" parent="Node3D"]
-transform = Transform3D(-4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0, 1, 0.5, -2, -3.5)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5, -2, -3.5)
 use_collision = true
-size = Vector3(5, 1, 1)
+size = Vector3(1, 5, 1)
 material = ExtResource("2_cqnuq")
 
 [node name="CSGBox3D15" type="CSGBox3D" parent="Node3D"]
-transform = Transform3D(-4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0, 1, 0.5, -0.5, -2)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5, -0.5, -2)
 use_collision = true
-size = Vector3(2, 1, 2)
+size = Vector3(1, 2, 2)
 material = ExtResource("2_cqnuq")
 
 [node name="CSGBox3D11" type="CSGBox3D" parent="Node3D"]
-transform = Transform3D(1.91069e-15, 4.37114e-08, -1, 1, -4.37114e-08, 0, -4.37114e-08, -1, -4.37114e-08, 5.5, -2, 5)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.5, -2, 5)
 use_collision = true
-size = Vector3(5, 1, 9)
+size = Vector3(9, 5, 1)
 material = ExtResource("2_cqnuq")
 
 [node name="CSGBox3D12" type="CSGBox3D" parent="Node3D"]
-transform = Transform3D(1.91069e-15, 4.37114e-08, -1, 1, -4.37114e-08, 0, -4.37114e-08, -1, -4.37114e-08, 5.5, -2.5, -4.5)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.5, -2, -4.5)
 use_collision = true
-size = Vector3(6, 1, 11)
+size = Vector3(11, 5, 1)
 material = ExtResource("2_cqnuq")
 
 [node name="CSGBox3D9" type="CSGBox3D" parent="Node3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, -5, 1.5)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.5, -5, 1)
 use_collision = true
-size = Vector3(10, 1, 11)
-material = ExtResource("2_cqnuq")
+size = Vector3(11, 1, 12)
+material = SubResource("StandardMaterial3D_r2i6s")
 
 [node name="Node3D" type="Node3D" parent="Node3D"]
 
 [node name="CSGBox3D3" type="CSGBox3D" parent="Node3D/Node3D"]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 3.75, -4, 0.5)
 use_collision = true
-size = Vector3(1.5, 1, 5.5)
+size = Vector3(1.5, 1.5, 5.5)
 material = SubResource("StandardMaterial3D_krvhe")
 
 [node name="CSGBox3D5" type="CSGBox3D" parent="Node3D/Node3D"]
@@ -91,25 +96,10 @@ use_collision = true
 size = Vector3(2, 1, 1)
 material = SubResource("StandardMaterial3D_krvhe")
 
-[node name="SpotLight3D" type="SpotLight3D" parent="Node3D"]
-transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 2.428, 1.5, -1)
-light_energy = 10.0
-spot_range = 7.0
-
-[node name="SpotLight3D3" type="SpotLight3D" parent="Node3D"]
-transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 2.428, 1.5, 3)
-light_energy = 10.0
-spot_range = 7.0
-
-[node name="SpotLight3D2" type="SpotLight3D" parent="Node3D"]
-transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 7.428, 1.5, -1)
-light_energy = 10.0
-spot_range = 7.0
-
-[node name="SpotLight3D4" type="SpotLight3D" parent="Node3D"]
-transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 7.428, 1.5, 3)
-light_energy = 10.0
-spot_range = 7.0
+[node name="OmniLight3D" type="OmniLight3D" parent="Node3D/Node3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.5, 0, 0)
+light_energy = 2.0
+omni_range = 10.0
 
 [node name="Node3D2" parent="." instance=ExtResource("4_1nn3i")]
 transform = Transform3D(-0.965926, 0, -0.258819, 0, 1, 0, 0.258819, 0, -0.965926, 0.5, -4, -3)
