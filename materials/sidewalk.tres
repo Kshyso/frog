@@ -1,9 +1,9 @@
 [gd_resource type="StandardMaterial3D" load_steps=5 format=3 uid="uid://bxpnxmvvn7yxi"]
 
-[ext_resource type="Texture2D" uid="uid://dj13xs6sdq25x" path="res://sidewalk_albedo.png" id="1"]
-[ext_resource type="Texture2D" uid="uid://dsh557i35vw44" path="res://sidewalk_orm.png" id="2"]
-[ext_resource type="Texture2D" uid="uid://bomxbslktl7i3" path="res://sidewalk_normal.png" id="3"]
-[ext_resource type="Texture2D" uid="uid://be30ye3fwcmsv" path="res://sidewalk_heightmap.png" id="4"]
+[ext_resource type="Texture2D" uid="uid://dj13xs6sdq25x" path="res://materials/sidewalk_albedo.png" id="1"]
+[ext_resource type="Texture2D" uid="uid://dsh557i35vw44" path="res://materials/sidewalk_orm.png" id="2"]
+[ext_resource type="Texture2D" uid="uid://bomxbslktl7i3" path="res://materials/sidewalk_normal.png" id="3"]
+[ext_resource type="Texture2D" uid="uid://be30ye3fwcmsv" path="res://materials/sidewalk_heightmap.png" id="4"]
 
 [resource]
 albedo_texture = ExtResource("1")
