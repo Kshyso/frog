@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://43e18jty5c15"]
+
+[ext_resource type="Texture2D" uid="uid://d3nbqqim5oscq" path="res://cashier.png" id="1_nmnpo"]
+
+[node name="Cashier" type="Sprite3D"]
+pixel_size = 0.0015
+billboard = 2
+shaded = true
+texture = ExtResource("1_nmnpo")
