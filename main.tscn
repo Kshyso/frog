@@ -8,11 +8,7 @@
 [ext_resource type="Texture2D" uid="uid://0syhnxlby45n" path="res://Base.png" id="6_20cl3"]
 
 [sub_resource type="Environment" id="Environment_k82p8"]
-tonemap_mode = 2
-ssao_enabled = true
-ssil_enabled = true
-sdfgi_enabled = true
-sdfgi_read_sky_light = false
+tonemap_mode = 1
 glow_enabled = true
 
 [node name="Node3D" type="Node3D"]
@@ -47,8 +43,8 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 4.25, 0)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, -2.625, 2.375)
 
 [node name="Sprite3D" type="Sprite3D" parent="."]
-transform = Transform3D(2.98023e-08, 0, -1, 0, 1, 0, 1, 0, 2.98023e-08, 16.5, 1.125, -1.625)
-pixel_size = 0.0011
+transform = Transform3D(2.98023e-08, 0, -1, 0, 1, 0, 1, 0, 2.98023e-08, 17.25, 1.125, -1)
+pixel_size = 0.0012
 billboard = 2
 texture = ExtResource("6_20cl3")
 

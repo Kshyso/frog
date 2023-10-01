@@ -30,9 +30,13 @@ animation/remove_immutable_tracks=true
 import_script/path=""
 _subresources={
 "materials": {
-"Material.002": {
+"DoorPaint": {
 "use_external/enabled": true,
-"use_external/path": "res://glass.tres"
+"use_external/path": "res://materials/door.tres"
+},
+"Glass": {
+"use_external/enabled": true,
+"use_external/path": "res://materials/glass.tres"
 }
 }
 }
