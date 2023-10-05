@@ -1,9 +1,9 @@
 [gd_scene load_steps=2 format=3 uid="uid://43e18jty5c15"]
 
-[ext_resource type="Texture2D" uid="uid://d3nbqqim5oscq" path="res://cashier.png" id="1_nmnpo"]
+[ext_resource type="Texture2D" uid="uid://duhg78ixria14" path="res://zabkara.png" id="1_s62dt"]
 
 [node name="Cashier" type="Sprite3D"]
-pixel_size = 0.0011
+pixel_size = 0.0001
 billboard = 2
 shaded = true
-texture = ExtResource("1_nmnpo")
+texture = ExtResource("1_s62dt")

@@ -21,8 +21,12 @@ settings/stdout/print_fps=true
 
 [display]
 
-window/size/viewport_width=1366
-window/size/viewport_height=768
+window/size/viewport_width=341
+window/size/viewport_height=192
+window/size/window_width_override=1366
+window/size/window_height_override=768
+window/stretch/mode="viewport"
+window/stretch/aspect="keep_height"
 
 [input]
 

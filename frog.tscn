@@ -1,10 +1,11 @@
-[gd_scene load_steps=8 format=3 uid="uid://cxgvsqwmg40du"]
+[gd_scene load_steps=9 format=3 uid="uid://cxgvsqwmg40du"]
 
 [ext_resource type="PackedScene" uid="uid://cnqe2y5u7nnbj" path="res://zaba.blend" id="1_24mqf"]
 [ext_resource type="Material" uid="uid://2imy3l0c0pxw" path="res://materials/test.tres" id="2_cqnuq"]
 [ext_resource type="Texture2D" uid="uid://k0rqsuubxqbs" path="res://addons/kenney_prototype_textures/light/texture_08.png" id="3_iw7cj"]
 [ext_resource type="Texture2D" uid="uid://dunlbpwh27obd" path="res://addons/kenney_prototype_textures/dark/texture_01.png" id="3_s5bo6"]
 [ext_resource type="PackedScene" uid="uid://bonpfd45ebno2" path="res://door.blend" id="4_1nn3i"]
+[ext_resource type="PackedScene" uid="uid://j7w3nrtx4i2v" path="res://fridge.blend" id="5_ssuj1"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_r2i6s"]
 albedo_texture = ExtResource("3_s5bo6")
@@ -90,12 +91,6 @@ use_collision = true
 size = Vector3(1, 2.5, 9.5)
 material = SubResource("StandardMaterial3D_krvhe")
 
-[node name="CSGBox3D8" type="CSGBox3D" parent="Node3D/Node3D"]
-transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 10.25, -3.25, 0)
-use_collision = true
-size = Vector3(6, 2.5, 1)
-material = SubResource("StandardMaterial3D_krvhe")
-
 [node name="CSGBox3D7" type="CSGBox3D" parent="Node3D/Node3D"]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 6.25, -3.5, -1)
 use_collision = true
@@ -113,6 +108,9 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.5, -1.375, 0)
 light_energy = 2.0
 shadow_enabled = true
 omni_range = 8.0
+
+[node name="fridge" parent="Node3D/Node3D" instance=ExtResource("5_ssuj1")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 10.25, -4.5, 0)
 
 [node name="Node3D2" parent="." instance=ExtResource("4_1nn3i")]
 transform = Transform3D(-0.965926, 0, -0.258819, 0, 1, 0, 0.258819, 0, -0.965926, 0.125, -4, -3)
