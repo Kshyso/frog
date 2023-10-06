@@ -2,8 +2,8 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dvigjcdmqtgvu"
-path.s3tc="res://.godot/imported/bake.png-89518db488eab151d4515bd4c48bcf6d.s3tc.ctex"
+uid="uid://0syhnxlby45n"
+path.s3tc="res://.godot/imported/Base.png-8ae3a975a0b657e0bbb32e8ee627fbd7.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://materials/bake.png"
-dest_files=["res://.godot/imported/bake.png-89518db488eab151d4515bd4c48bcf6d.s3tc.ctex"]
+source_file="res://textures/Base.png"
+dest_files=["res://.godot/imported/Base.png-8ae3a975a0b657e0bbb32e8ee627fbd7.s3tc.ctex"]
 
 [params]
 

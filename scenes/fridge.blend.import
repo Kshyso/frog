@@ -3,18 +3,18 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://bonpfd45ebno2"
-path="res://.godot/imported/door.blend-bc2da5bc1206dd7bc330d89faea8b0d4.scn"
+uid="uid://j7w3nrtx4i2v"
+path="res://.godot/imported/fridge.blend-f9c8fd126acacc0f12920456f9c188e7.scn"
 
 [deps]
 
-source_file="res://door.blend"
-dest_files=["res://.godot/imported/door.blend-bc2da5bc1206dd7bc330d89faea8b0d4.scn"]
+source_file="res://scenes/fridge.blend"
+dest_files=["res://.godot/imported/fridge.blend-f9c8fd126acacc0f12920456f9c188e7.scn"]
 
 [params]
 
-nodes/root_type=""
-nodes/root_name=""
+nodes/root_type="Node3D"
+nodes/root_name="Scene Root"
 nodes/apply_root_scale=true
 nodes/root_scale=1.0
 meshes/ensure_tangents=true
@@ -28,18 +28,7 @@ animation/fps=30
 animation/trimming=false
 animation/remove_immutable_tracks=true
 import_script/path=""
-_subresources={
-"materials": {
-"DoorPaint": {
-"use_external/enabled": true,
-"use_external/path": "res://materials/door.tres"
-},
-"Glass": {
-"use_external/enabled": true,
-"use_external/path": "res://materials/glass.tres"
-}
-}
-}
+_subresources={}
 gltf/embedded_image_handling=1
 blender/nodes/visible=0
 blender/nodes/punctual_lights=true

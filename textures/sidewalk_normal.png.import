@@ -2,8 +2,8 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dj13xs6sdq25x"
-path.s3tc="res://.godot/imported/sidewalk_albedo.png-9cf328c72f412249b39e5bd65b617f19.s3tc.ctex"
+uid="uid://bomxbslktl7i3"
+path.s3tc="res://.godot/imported/sidewalk_normal.png-f059d4b5e450b172ae1a83207926e37c.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://materials/sidewalk_albedo.png"
-dest_files=["res://.godot/imported/sidewalk_albedo.png-9cf328c72f412249b39e5bd65b617f19.s3tc.ctex"]
+source_file="res://textures/sidewalk_normal.png"
+dest_files=["res://.godot/imported/sidewalk_normal.png-f059d4b5e450b172ae1a83207926e37c.s3tc.ctex"]
 
 [params]
 
@@ -20,12 +20,12 @@ compress/mode=2
 compress/high_quality=false
 compress/lossy_quality=0.7
 compress/hdr_compression=1
-compress/normal_map=0
+compress/normal_map=1
 compress/channel_pack=0
 mipmaps/generate=true
 mipmaps/limit=-1
-roughness/mode=0
-roughness/src_normal=""
+roughness/mode=1
+roughness/src_normal="res://sidewalk_normal.png"
 process/fix_alpha_border=true
 process/premult_alpha=false
 process/normal_map_invert_y=false

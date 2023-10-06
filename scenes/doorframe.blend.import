@@ -3,18 +3,18 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://j7w3nrtx4i2v"
-path="res://.godot/imported/fridge.blend-926196dd26ffa934bb7fcdc2fd673a02.scn"
+uid="uid://scx8q1potjn8"
+path="res://.godot/imported/doorframe.blend-231bb3f76cfa6100a3266a43d82b479a.scn"
 
 [deps]
 
-source_file="res://fridge.blend"
-dest_files=["res://.godot/imported/fridge.blend-926196dd26ffa934bb7fcdc2fd673a02.scn"]
+source_file="res://scenes/doorframe.blend"
+dest_files=["res://.godot/imported/doorframe.blend-231bb3f76cfa6100a3266a43d82b479a.scn"]
 
 [params]
 
-nodes/root_type="Node3D"
-nodes/root_name="Scene Root"
+nodes/root_type=""
+nodes/root_name=""
 nodes/apply_root_scale=true
 nodes/root_scale=1.0
 meshes/ensure_tangents=true

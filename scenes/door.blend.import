@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://scx8q1potjn8"
-path="res://.godot/imported/doorframe.blend-27c166b09029af7ca2f18b4d78084b39.scn"
+uid="uid://bonpfd45ebno2"
+path="res://.godot/imported/door.blend-d47b71ebe799955c35f09db072e7ea5c.scn"
 
 [deps]
 
-source_file="res://doorframe.blend"
-dest_files=["res://.godot/imported/doorframe.blend-27c166b09029af7ca2f18b4d78084b39.scn"]
+source_file="res://scenes/door.blend"
+dest_files=["res://.godot/imported/door.blend-d47b71ebe799955c35f09db072e7ea5c.scn"]
 
 [params]
 
@@ -28,7 +28,18 @@ animation/fps=30
 animation/trimming=false
 animation/remove_immutable_tracks=true
 import_script/path=""
-_subresources={}
+_subresources={
+"materials": {
+"DoorPaint": {
+"use_external/enabled": true,
+"use_external/path": "res://shaders/door.tres"
+},
+"Glass": {
+"use_external/enabled": true,
+"use_external/path": "res://shaders/glass.tres"
+}
+}
+}
 gltf/embedded_image_handling=1
 blender/nodes/visible=0
 blender/nodes/punctual_lights=true

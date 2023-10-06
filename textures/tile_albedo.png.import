@@ -2,8 +2,8 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cjf51b0ghaqpe"
-path.s3tc="res://.godot/imported/tile_orm.png-644abe7bf14903e620bb504e2b74f881.s3tc.ctex"
+uid="uid://de7m00ch8d7ru"
+path.s3tc="res://.godot/imported/tile_albedo.png-27a2795d80270c7aa0f5306d4d436f38.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://materials/tile_orm.png"
-dest_files=["res://.godot/imported/tile_orm.png-644abe7bf14903e620bb504e2b74f881.s3tc.ctex"]
+source_file="res://textures/tile_albedo.png"
+dest_files=["res://.godot/imported/tile_albedo.png-27a2795d80270c7aa0f5306d4d436f38.s3tc.ctex"]
 
 [params]
 

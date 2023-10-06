@@ -1,11 +1,11 @@
 [gd_scene load_steps=9 format=3 uid="uid://cxgvsqwmg40du"]
 
-[ext_resource type="PackedScene" uid="uid://cnqe2y5u7nnbj" path="res://zaba.blend" id="1_24mqf"]
-[ext_resource type="Material" uid="uid://2imy3l0c0pxw" path="res://materials/test.tres" id="2_cqnuq"]
+[ext_resource type="PackedScene" uid="uid://cnqe2y5u7nnbj" path="res://scenes/zaba.blend" id="1_24mqf"]
+[ext_resource type="Material" uid="uid://2imy3l0c0pxw" path="res://shaders/test.tres" id="2_shjpf"]
 [ext_resource type="Texture2D" uid="uid://k0rqsuubxqbs" path="res://addons/kenney_prototype_textures/light/texture_08.png" id="3_iw7cj"]
 [ext_resource type="Texture2D" uid="uid://dunlbpwh27obd" path="res://addons/kenney_prototype_textures/dark/texture_01.png" id="3_s5bo6"]
-[ext_resource type="PackedScene" uid="uid://bonpfd45ebno2" path="res://door.blend" id="4_1nn3i"]
-[ext_resource type="PackedScene" uid="uid://j7w3nrtx4i2v" path="res://fridge.blend" id="5_ssuj1"]
+[ext_resource type="PackedScene" uid="uid://bonpfd45ebno2" path="res://scenes/door.blend" id="4_1nn3i"]
+[ext_resource type="PackedScene" uid="uid://j7w3nrtx4i2v" path="res://scenes/fridge.blend" id="5_ssuj1"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_r2i6s"]
 albedo_texture = ExtResource("3_s5bo6")
@@ -27,43 +27,43 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.5, -0.5, 1.375)
 use_collision = true
 size = Vector3(11, 1, 11.25)
-material = ExtResource("2_cqnuq")
+material = ExtResource("2_shjpf")
 
 [node name="CSGBox3D10" type="CSGBox3D" parent="Node3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.875, -2, 1.5)
 use_collision = true
 size = Vector3(0.25, 5, 11)
-material = ExtResource("2_cqnuq")
+material = ExtResource("2_shjpf")
 
 [node name="CSGBox3D13" type="CSGBox3D" parent="Node3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.125, -2, 3)
 use_collision = true
 size = Vector3(0.25, 5, 8)
-material = ExtResource("2_cqnuq")
+material = ExtResource("2_shjpf")
 
 [node name="CSGBox3D14" type="CSGBox3D" parent="Node3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.125, -2, -3.5)
 use_collision = true
 size = Vector3(0.25, 5, 1)
-material = ExtResource("2_cqnuq")
+material = ExtResource("2_shjpf")
 
 [node name="CSGBox3D15" type="CSGBox3D" parent="Node3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.125, -0.5, -2)
 use_collision = true
 size = Vector3(0.25, 2, 2)
-material = ExtResource("2_cqnuq")
+material = ExtResource("2_shjpf")
 
 [node name="CSGBox3D11" type="CSGBox3D" parent="Node3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.50294, -2.0107, 4.12291)
 use_collision = true
 size = Vector3(10.5, 5, 0.25)
-material = ExtResource("2_cqnuq")
+material = ExtResource("2_shjpf")
 
 [node name="CSGBox3D12" type="CSGBox3D" parent="Node3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.5, -2, -4.125)
 use_collision = true
 size = Vector3(11, 5, 0.25)
-material = ExtResource("2_cqnuq")
+material = ExtResource("2_shjpf")
 
 [node name="CSGBox3D9" type="CSGBox3D" parent="Node3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.5, -5, 1.375)

@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://cnqe2y5u7nnbj"
-path="res://.godot/imported/zaba.blend-d344cf53889ad9e8280befbd11dde8ba.scn"
+path="res://.godot/imported/zaba.blend-76f05c412a8231b7f6ce8ed80f641e96.scn"
 
 [deps]
 
-source_file="res://zaba.blend"
-dest_files=["res://.godot/imported/zaba.blend-d344cf53889ad9e8280befbd11dde8ba.scn"]
+source_file="res://scenes/zaba.blend"
+dest_files=["res://.godot/imported/zaba.blend-76f05c412a8231b7f6ce8ed80f641e96.scn"]
 
 [params]
 

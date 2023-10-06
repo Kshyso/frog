@@ -2,8 +2,8 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://0syhnxlby45n"
-path.s3tc="res://.godot/imported/Base.png-fb70e17a906c1cd3ace73e6b026ee1b1.s3tc.ctex"
+uid="uid://be30ye3fwcmsv"
+path.s3tc="res://.godot/imported/sidewalk_heightmap.png-296fd82b52ae7d7397196ee9f61efed2.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://Base.png"
-dest_files=["res://.godot/imported/Base.png-fb70e17a906c1cd3ace73e6b026ee1b1.s3tc.ctex"]
+source_file="res://textures/sidewalk_heightmap.png"
+dest_files=["res://.godot/imported/sidewalk_heightmap.png-296fd82b52ae7d7397196ee9f61efed2.s3tc.ctex"]
 
 [params]
 
@@ -24,8 +24,8 @@ compress/normal_map=0
 compress/channel_pack=0
 mipmaps/generate=true
 mipmaps/limit=-1
-roughness/mode=0
-roughness/src_normal=""
+roughness/mode=7
+roughness/src_normal="res://sidewalk_normal.png"
 process/fix_alpha_border=true
 process/premult_alpha=false
 process/normal_map_invert_y=false

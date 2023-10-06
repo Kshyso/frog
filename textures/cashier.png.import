@@ -2,8 +2,8 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bgpwbpltrax2i"
-path.s3tc="res://.godot/imported/road_albedo.png-64bfbea19e25c7b0ec43fbace7ad69e3.s3tc.ctex"
+uid="uid://d3nbqqim5oscq"
+path.s3tc="res://.godot/imported/cashier.png-4f8683705b8c76f59e71f84fd0361912.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://materials/road_albedo.png"
-dest_files=["res://.godot/imported/road_albedo.png-64bfbea19e25c7b0ec43fbace7ad69e3.s3tc.ctex"]
+source_file="res://textures/cashier.png"
+dest_files=["res://.godot/imported/cashier.png-4f8683705b8c76f59e71f84fd0361912.s3tc.ctex"]
 
 [params]
 
