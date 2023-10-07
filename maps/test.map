@@ -1,0 +1,16 @@
+// Game: Generic
+// Format: Standard
+// entity 0
+{
+"classname" "worldspawn"
+"_tb_textures" "textures;textures/kenney_prototype_textures;textures/kenney_prototype_textures/dark;textures/kenney_prototype_textures/green;textures/kenney_prototype_textures/light;textures/kenney_prototype_textures/orange;textures/kenney_prototype_textures/purple;textures/kenney_prototype_textures/red"
+// brush 0
+{
+( -512 -64 0 ) ( -512 -63 0 ) ( -512 -64 1 ) kenney_prototype_textures/orange/texture_01 0 16 0 1 1
+( -64 -512 0 ) ( -64 -512 1 ) ( -63 -512 0 ) kenney_prototype_textures/orange/texture_01 0 16 0 1 1
+( -64 -64 0 ) ( -63 -64 0 ) ( -64 -63 0 ) kenney_prototype_textures/orange/texture_01 0 0 0 1 1
+( 64 64 512 ) ( 64 65 512 ) ( 65 64 512 ) kenney_prototype_textures/orange/texture_01 0 0 0 1 1
+( 64 512 32 ) ( 65 512 32 ) ( 64 512 33 ) kenney_prototype_textures/orange/texture_01 0 16 0 1 1
+( 512 64 32 ) ( 512 64 33 ) ( 512 65 32 ) kenney_prototype_textures/orange/texture_01 0 16 0 1 1
+}
+}

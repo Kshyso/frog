@@ -42,11 +42,14 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 4.25, 0)
 [node name="Cashier" parent="Node3D" instance=ExtResource("5_fqvss")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.375, -2.625, 2.375)
 pixel_size = 0.0006
+texture_filter = 2
 
 [node name="Sprite3D" type="Sprite3D" parent="."]
 transform = Transform3D(2.98023e-08, 0, -1, 0, 1, 0, 1, 0, 2.98023e-08, 17.25, 1.125, -1)
 pixel_size = 0.0012
 billboard = 2
+shaded = true
+texture_filter = 2
 texture = ExtResource("6_86m4o")
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]

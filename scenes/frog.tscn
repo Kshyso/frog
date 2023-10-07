@@ -2,18 +2,20 @@
 
 [ext_resource type="PackedScene" uid="uid://cnqe2y5u7nnbj" path="res://scenes/zaba.blend" id="1_24mqf"]
 [ext_resource type="Material" uid="uid://2imy3l0c0pxw" path="res://shaders/test.tres" id="2_shjpf"]
-[ext_resource type="Texture2D" uid="uid://k0rqsuubxqbs" path="res://addons/kenney_prototype_textures/light/texture_08.png" id="3_iw7cj"]
-[ext_resource type="Texture2D" uid="uid://dunlbpwh27obd" path="res://addons/kenney_prototype_textures/dark/texture_01.png" id="3_s5bo6"]
+[ext_resource type="Texture2D" uid="uid://dhel2i2a78b82" path="res://textures/black.png" id="3_mclem"]
 [ext_resource type="PackedScene" uid="uid://bonpfd45ebno2" path="res://scenes/door.blend" id="4_1nn3i"]
+[ext_resource type="Texture2D" uid="uid://gvg38mng4w8n" path="res://textures/white.png" id="4_gioj8"]
 [ext_resource type="PackedScene" uid="uid://j7w3nrtx4i2v" path="res://scenes/fridge.blend" id="5_ssuj1"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_r2i6s"]
-albedo_texture = ExtResource("3_s5bo6")
+albedo_texture = ExtResource("3_mclem")
 uv1_triplanar = true
+texture_filter = 2
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_krvhe"]
-albedo_texture = ExtResource("3_iw7cj")
+albedo_texture = ExtResource("4_gioj8")
 uv1_triplanar = true
+texture_filter = 2
 
 [node name="frog" type="Node3D"]
 
