@@ -1,12 +1,26 @@
-[gd_scene load_steps=6 format=3 uid="uid://ljgg56e5oy6i"]
+[gd_scene load_steps=9 format=3 uid="uid://ljgg56e5oy6i"]
 
 [ext_resource type="PackedScene" uid="uid://dqlsjkajyug1c" path="res://scenes/character.tscn" id="1_uu505"]
 [ext_resource type="Material" uid="uid://dci6t1m4d167y" path="res://shaders/road.tres" id="2_3hjqp"]
 [ext_resource type="Material" uid="uid://bxpnxmvvn7yxi" path="res://shaders/sidewalk.tres" id="3_7vt82"]
 [ext_resource type="PackedScene" uid="uid://cxgvsqwmg40du" path="res://scenes/frog.tscn" id="4_05x25"]
+[ext_resource type="Texture2D" uid="uid://b5l2ecqnrntcg" path="res://textures/skyboxes/vignaioli_night_1k.exr" id="5_djsx1"]
+
+[sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_8veia"]
+panorama = ExtResource("5_djsx1")
+filter = false
+
+[sub_resource type="Sky" id="Sky_nhnwx"]
+sky_material = SubResource("PanoramaSkyMaterial_8veia")
 
 [sub_resource type="Environment" id="Environment_k82p8"]
-tonemap_mode = 1
+background_mode = 2
+background_energy_multiplier = 0.1
+sky = SubResource("Sky_nhnwx")
+tonemap_mode = 2
+sdfgi_energy = 1000.0
+sdfgi_normal_bias = 10.0
+sdfgi_probe_bias = 10.0
 glow_enabled = true
 
 [node name="Node3D" type="Node3D"]
