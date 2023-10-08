@@ -1,11 +1,9 @@
-[gd_scene load_steps=8 format=3 uid="uid://ljgg56e5oy6i"]
+[gd_scene load_steps=6 format=3 uid="uid://ljgg56e5oy6i"]
 
 [ext_resource type="PackedScene" uid="uid://dqlsjkajyug1c" path="res://scenes/character.tscn" id="1_uu505"]
 [ext_resource type="Material" uid="uid://dci6t1m4d167y" path="res://shaders/road.tres" id="2_3hjqp"]
 [ext_resource type="Material" uid="uid://bxpnxmvvn7yxi" path="res://shaders/sidewalk.tres" id="3_7vt82"]
 [ext_resource type="PackedScene" uid="uid://cxgvsqwmg40du" path="res://scenes/frog.tscn" id="4_05x25"]
-[ext_resource type="PackedScene" uid="uid://43e18jty5c15" path="res://scenes/cashier.tscn" id="5_fqvss"]
-[ext_resource type="Texture2D" uid="uid://0syhnxlby45n" path="res://textures/Base.png" id="6_86m4o"]
 
 [sub_resource type="Environment" id="Environment_k82p8"]
 tonemap_mode = 1
@@ -50,19 +48,6 @@ size = Vector3(1, 1, 22.133)
 
 [node name="Node3D" parent="." instance=ExtResource("4_05x25")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13.5, 0.25, 0)
-
-[node name="Cashier" parent="Node3D" instance=ExtResource("5_fqvss")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 1.25, 3)
-pixel_size = 0.0006
-texture_filter = 2
-
-[node name="Sprite3D" type="Sprite3D" parent="."]
-transform = Transform3D(2.98023e-08, 0, -1, 0, 1, 0, 1, 0, 2.98023e-08, 17.25, 1.125, -1)
-pixel_size = 0.0012
-billboard = 2
-shaded = true
-texture_filter = 2
-texture = ExtResource("6_86m4o")
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_k82p8")

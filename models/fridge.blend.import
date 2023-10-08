@@ -3,18 +3,18 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://cnqe2y5u7nnbj"
-path="res://.godot/imported/zaba.blend-76f05c412a8231b7f6ce8ed80f641e96.scn"
+uid="uid://j7w3nrtx4i2v"
+path="res://.godot/imported/fridge.blend-395d437ee12e01eec74054c644c39a95.scn"
 
 [deps]
 
-source_file="res://scenes/zaba.blend"
-dest_files=["res://.godot/imported/zaba.blend-76f05c412a8231b7f6ce8ed80f641e96.scn"]
+source_file="res://models/fridge.blend"
+dest_files=["res://.godot/imported/fridge.blend-395d437ee12e01eec74054c644c39a95.scn"]
 
 [params]
 
-nodes/root_type=""
-nodes/root_name=""
+nodes/root_type="Node3D"
+nodes/root_name="Scene Root"
 nodes/apply_root_scale=true
 nodes/root_scale=1.0
 meshes/ensure_tangents=true
