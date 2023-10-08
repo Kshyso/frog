@@ -15,9 +15,11 @@ sky_material = SubResource("PanoramaSkyMaterial_8veia")
 
 [sub_resource type="Environment" id="Environment_k82p8"]
 background_mode = 2
-background_energy_multiplier = 0.1
+background_energy_multiplier = 0.5
 sky = SubResource("Sky_nhnwx")
-tonemap_mode = 2
+ambient_light_source = 3
+reflected_light_source = 2
+tonemap_mode = 1
 sdfgi_energy = 1000.0
 sdfgi_normal_bias = 10.0
 sdfgi_probe_bias = 10.0

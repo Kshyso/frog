@@ -1,9 +1,11 @@
 extends CharacterBody3D
 
 
-@export var speed := 5.0
+@export var speed := 5
 @export var jump_velocity := 2.5
 @export var look_sens := 0.4
+@export var max_roll_angle := 2
+@export var roll_speed := 5
 
 # Get the gravity from the project settings to be synced with RigidBody nodes.
 var gravity = ProjectSettings.get_setting("physics/3d/default_gravity")
@@ -35,7 +37,8 @@ func _physics_process(delta):
 	else:
 		velocity.x = move_toward(velocity.x, 0, speed)
 		velocity.z = move_toward(velocity.z, 0, speed)
-
+	var target_roll := -input_dir.x * max_roll_angle
+	rotation_degrees.z = lerp(rotation_degrees.z, target_roll, roll_speed * delta)
 	move_and_slide()
 
 func _input(event):
