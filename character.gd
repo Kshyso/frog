@@ -6,7 +6,7 @@ extends CharacterBody3D
 @export var look_sens := 0.4
 @export var max_roll_angle := 2
 @export var roll_speed := 5
-@export var SPRINT_VELOCITY := 2.5
+@export var sprint_velocity := 2.5
 # Get the gravity from the project settings to be synced with RigidBody nodes.
 var gravity = ProjectSettings.get_setting("physics/3d/default_gravity")
 
@@ -36,8 +36,8 @@ func _physics_process(delta):
 		velocity.z = direction.z * speed
 		
 		if Input.is_action_pressed("sprint"):
-			velocity.x *= SPRINT_VELOCITY
-			velocity.z *= SPRINT_VELOCITY
+			velocity.x *= sprint_velocity
+			velocity.z *= sprint_velocity
 	else:
 		velocity.x = move_toward(velocity.x, 0, speed)
 		velocity.z = move_toward(velocity.z, 0, speed)
