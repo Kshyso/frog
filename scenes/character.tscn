@@ -21,7 +21,7 @@ tracks/0/keys = {
 }
 
 [sub_resource type="Animation" id="Animation_yuitx"]
-resource_name = "skok"
+resource_name = "jump"
 length = 0.5
 tracks/0/type = "value"
 tracks/0/imported = false
@@ -39,7 +39,7 @@ tracks/0/keys = {
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_ajh8p"]
 _data = {
 "RESET": SubResource("Animation_y4qag"),
-"skok": SubResource("Animation_yuitx")
+"jump": SubResource("Animation_yuitx")
 }
 
 [node name="Character" type="CharacterBody3D"]
