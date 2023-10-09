@@ -6,7 +6,7 @@ extends CharacterBody3D
 @export var look_sens := 0.4
 @export var max_roll_angle := 2
 @export var roll_speed := 5
-
+@export var SPRINT_VELOCITY := 2.5
 # Get the gravity from the project settings to be synced with RigidBody nodes.
 var gravity = ProjectSettings.get_setting("physics/3d/default_gravity")
 
@@ -26,7 +26,7 @@ func _physics_process(delta):
 	# Handle Jump.
 	if Input.is_action_just_pressed("jump") and is_on_floor():
 		velocity.y = jump_velocity
-
+		$Neck/Camera3D/AnimationPlayer.play("skok")
 	# Get the input direction and handle the movement/deceleration.
 	# As good practice, you should replace UI actions with custom gameplay actions.
 	var input_dir := Input.get_vector("left", "right", "forward", "backward")
@@ -34,13 +34,17 @@ func _physics_process(delta):
 	if direction:
 		velocity.x = direction.x * speed
 		velocity.z = direction.z * speed
+		
+		if Input.is_action_pressed("sprint"):
+			velocity.x *= SPRINT_VELOCITY
+			velocity.z *= SPRINT_VELOCITY
 	else:
 		velocity.x = move_toward(velocity.x, 0, speed)
 		velocity.z = move_toward(velocity.z, 0, speed)
 	var target_roll := -input_dir.x * max_roll_angle
 	rotation_degrees.z = lerp(rotation_degrees.z, target_roll, roll_speed * delta)
 	move_and_slide()
-
+	
 func _input(event):
 	if Input.is_action_pressed("ui_cancel"):
 		Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)

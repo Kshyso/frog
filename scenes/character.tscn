@@ -1,9 +1,46 @@
-[gd_scene load_steps=3 format=3 uid="uid://dqlsjkajyug1c"]
+[gd_scene load_steps=6 format=3 uid="uid://dqlsjkajyug1c"]
 
 [ext_resource type="Script" path="res://character.gd" id="1_o8jjf"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_qo1hq"]
 size = Vector3(0.5, 1.8, 0.5)
+
+[sub_resource type="Animation" id="Animation_yuitx"]
+resource_name = "skok"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.3, 0.5),
+"transitions": PackedFloat32Array(0.148651, 1, 1),
+"update": 0,
+"values": [Vector3(0, 0, 0), Vector3(-0.15708, 0, 0), Vector3(0, 0, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_y4qag"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(0, 0, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_ajh8p"]
+_data = {
+"RESET": SubResource("Animation_y4qag"),
+"skok": SubResource("Animation_yuitx")
+}
 
 [node name="Character" type="CharacterBody3D"]
 script = ExtResource("1_o8jjf")
@@ -16,3 +53,8 @@ shape = SubResource("BoxShape3D_qo1hq")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.78, 0)
 
 [node name="Camera3D" type="Camera3D" parent="Neck"]
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Neck/Camera3D"]
+libraries = {
+"": SubResource("AnimationLibrary_ajh8p")
+}

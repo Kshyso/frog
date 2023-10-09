@@ -12,11 +12,13 @@ filter = false
 
 [sub_resource type="Sky" id="Sky_nhnwx"]
 sky_material = SubResource("PanoramaSkyMaterial_8veia")
+radiance_size = 0
 
 [sub_resource type="Environment" id="Environment_k82p8"]
 background_mode = 2
 background_energy_multiplier = 0.5
 sky = SubResource("Sky_nhnwx")
+sky_custom_fov = 82.4
 ambient_light_source = 3
 reflected_light_source = 2
 tonemap_mode = 1
