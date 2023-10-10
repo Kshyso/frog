@@ -1,0 +1,14 @@
+[remap]
+
+importer="qodot.map"
+type="Resource"
+uid="uid://4wxbqedarwhw"
+path="res://.godot/imported/frog.1.map-108ac23a9689cc4d2f7371f046b69d7a.tres"
+
+[deps]
+
+source_file="res://maps/autosave/frog.1.map"
+dest_files=["res://.godot/imported/frog.1.map-108ac23a9689cc4d2f7371f046b69d7a.tres"]
+
+[params]
+
