@@ -16,7 +16,6 @@ radiance_size = 0
 
 [sub_resource type="Environment" id="Environment_k82p8"]
 background_mode = 2
-background_energy_multiplier = 0.5
 sky = SubResource("Sky_nhnwx")
 sky_custom_fov = 90.0
 ambient_light_source = 3
