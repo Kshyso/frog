@@ -14,7 +14,7 @@
 [resource]
 script = ExtResource("3_8vw40")
 export_file = false
-trenchbroom_games_folder = ""
+trenchbroom_games_folder = "/home/kshysio/.TrenchBroom/games"
 game_name = "Qodot"
 icon = ExtResource("2_jej4n")
 fgd_files = Array[Resource]([ExtResource("5_lvbhp"), ExtResource("5_j6v5h"), ExtResource("6_8ndd7"), ExtResource("6_6fyp8")])

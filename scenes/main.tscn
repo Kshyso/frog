@@ -29,10 +29,9 @@ volumetric_fog_emission = Color(0.411765, 0.411765, 0.411765, 1)
 [node name="Node3D" type="Node3D"]
 
 [node name="Character" parent="." instance=ExtResource("1_uu505")]
-transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 10, 0, -2)
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 1.375, 0, -2.75)
 
 [node name="Node3D" parent="." instance=ExtResource("4_05x25")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13.5, 0.25, 0)
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_k82p8")
