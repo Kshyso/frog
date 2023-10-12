@@ -1,16 +1,13 @@
-[gd_scene load_steps=7 format=3 uid="uid://ljgg56e5oy6i"]
+[gd_scene load_steps=6 format=3 uid="uid://ljgg56e5oy6i"]
 
 [ext_resource type="PackedScene" uid="uid://dqlsjkajyug1c" path="res://scenes/character.tscn" id="1_uu505"]
 [ext_resource type="PackedScene" uid="uid://cxgvsqwmg40du" path="res://scenes/frog.tscn" id="4_05x25"]
-[ext_resource type="Texture2D" uid="uid://b5l2ecqnrntcg" path="res://textures/skyboxes/vignaioli_night_1k.exr" id="5_djsx1"]
 
-[sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_8veia"]
-panorama = ExtResource("5_djsx1")
-filter = false
+[sub_resource type="PhysicalSkyMaterial" id="PhysicalSkyMaterial_4uvsw"]
+rayleigh_coefficient = 0.0
 
 [sub_resource type="Sky" id="Sky_nhnwx"]
-sky_material = SubResource("PanoramaSkyMaterial_8veia")
-radiance_size = 0
+sky_material = SubResource("PhysicalSkyMaterial_4uvsw")
 
 [sub_resource type="Environment" id="Environment_k82p8"]
 background_mode = 2
@@ -35,3 +32,10 @@ transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 1.375,
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_k82p8")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(0.866025, 0.353553, -0.353553, 0, 0.707107, 0.707107, 0.5, -0.612372, 0.612372, 0, 14.125, 0)
+light_color = Color(0.360784, 0.32549, 0.588235, 1)
+light_energy = 0.5
+light_angular_distance = 4.0
+shadow_enabled = true

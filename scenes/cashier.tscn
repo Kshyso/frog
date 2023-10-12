@@ -1,9 +1,18 @@
-[gd_scene load_steps=2 format=3 uid="uid://43e18jty5c15"]
+[gd_scene load_steps=3 format=3 uid="uid://43e18jty5c15"]
 
 [ext_resource type="Texture2D" uid="uid://duhg78ixria14" path="res://textures/zabkara.png" id="1_qeq3v"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_cuy6l"]
+size = Vector3(0.625, 0.375, 0.625)
 
 [node name="Cashier" type="Sprite3D"]
 pixel_size = 0.0001
 billboard = 2
 shaded = true
 texture = ExtResource("1_qeq3v")
+
+[node name="Area3D" type="Area3D" parent="."]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.25)
+shape = SubResource("BoxShape3D_cuy6l")
