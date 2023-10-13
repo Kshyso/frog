@@ -2,20 +2,21 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ccdwu3aqyoh6u"
-path="res://.godot/imported/sidewalk.png-10286034c06dffc41432f4e68d554a7b.ctex"
+uid="uid://cwer2jhouwhm1"
+path.s3tc="res://.godot/imported/text.png-ce47260c9cf4304b230e440076c5636f.s3tc.ctex"
 metadata={
-"vram_texture": false
+"imported_formats": ["s3tc_bptc"],
+"vram_texture": true
 }
 
 [deps]
 
-source_file="res://textures/sidewalk.png"
-dest_files=["res://.godot/imported/sidewalk.png-10286034c06dffc41432f4e68d554a7b.ctex"]
+source_file="res://textures/text.png"
+dest_files=["res://.godot/imported/text.png-ce47260c9cf4304b230e440076c5636f.s3tc.ctex"]
 
 [params]
 
-compress/mode=0
+compress/mode=2
 compress/high_quality=false
 compress/lossy_quality=0.7
 compress/hdr_compression=1

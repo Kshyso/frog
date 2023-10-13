@@ -1,6 +1,7 @@
-[gd_scene load_steps=6 format=3 uid="uid://ljgg56e5oy6i"]
+[gd_scene load_steps=7 format=3 uid="uid://ljgg56e5oy6i"]
 
 [ext_resource type="PackedScene" uid="uid://dqlsjkajyug1c" path="res://scenes/character.tscn" id="1_uu505"]
+[ext_resource type="LightmapGIData" uid="uid://c5hrao6efya81" path="res://scenes/main.lmbake" id="3_sno5b"]
 [ext_resource type="PackedScene" uid="uid://cxgvsqwmg40du" path="res://scenes/frog.tscn" id="4_05x25"]
 
 [sub_resource type="PhysicalSkyMaterial" id="PhysicalSkyMaterial_4uvsw"]
@@ -20,6 +21,11 @@ sdfgi_energy = 1000.0
 sdfgi_normal_bias = 10.0
 sdfgi_probe_bias = 10.0
 glow_enabled = true
+glow_intensity = 0.0
+glow_strength = 0.0
+glow_hdr_threshold = 0.0
+glow_hdr_scale = 0.0
+glow_hdr_luminance_cap = 8.85
 fog_density = 0.1
 volumetric_fog_emission = Color(0.411765, 0.411765, 0.411765, 1)
 
@@ -39,3 +45,8 @@ light_color = Color(0.360784, 0.32549, 0.588235, 1)
 light_energy = 0.5
 light_angular_distance = 4.0
 shadow_enabled = true
+
+[node name="LightmapGI" type="LightmapGI" parent="."]
+light_data = ExtResource("3_sno5b")
+
+[node name="LightmapProbe" type="LightmapProbe" parent="."]
