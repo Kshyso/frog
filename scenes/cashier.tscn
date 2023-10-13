@@ -1,18 +1,30 @@
-[gd_scene load_steps=3 format=3 uid="uid://43e18jty5c15"]
+[gd_scene load_steps=5 format=3 uid="uid://43e18jty5c15"]
 
 [ext_resource type="Texture2D" uid="uid://duhg78ixria14" path="res://textures/zabkara.png" id="1_qeq3v"]
+[ext_resource type="Script" path="res://scripts/cashier.gd" id="2_y6i8f"]
+[ext_resource type="PackedScene" uid="uid://by7ilhbca36sn" path="res://scenes/chat_box.tscn" id="3_xqiuc"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_cuy6l"]
-size = Vector3(0.625, 0.375, 0.625)
+size = Vector3(1.5, 1.625, 2.5)
 
 [node name="Cashier" type="Sprite3D"]
-pixel_size = 0.0001
+pixel_size = 0.0006
 billboard = 2
 shaded = true
 texture = ExtResource("1_qeq3v")
+script = ExtResource("2_y6i8f")
+
+[node name="ChatBox" parent="." instance=ExtResource("3_xqiuc")]
+anchors_preset = 6
 
 [node name="Area3D" type="Area3D" parent="."]
+collision_layer = 0
+collision_mask = 2
+monitorable = false
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.25)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.25, 0.875)
 shape = SubResource("BoxShape3D_cuy6l")
+
+[connection signal="body_entered" from="Area3D" to="." method="_on_area_3d_body_entered"]
+[connection signal="body_exited" from="Area3D" to="." method="_on_area_3d_body_exited"]
