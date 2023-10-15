@@ -10,7 +10,7 @@ size = Vector3(2, 1.625, 4)
 [node name="Cashier" type="Sprite3D"]
 pixel_size = 0.0006
 billboard = 2
-shaded = true
+texture_filter = 0
 texture = ExtResource("1_qeq3v")
 script = ExtResource("2_y6i8f")
 
