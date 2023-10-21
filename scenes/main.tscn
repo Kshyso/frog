@@ -15,16 +15,10 @@ background_mode = 2
 sky = SubResource("Sky_nhnwx")
 ambient_light_source = 3
 reflected_light_source = 2
-tonemap_mode = 1
 sdfgi_energy = 1000.0
 sdfgi_normal_bias = 10.0
 sdfgi_probe_bias = 10.0
 glow_enabled = true
-glow_intensity = 0.0
-glow_strength = 0.0
-glow_hdr_threshold = 0.0
-glow_hdr_scale = 0.0
-glow_hdr_luminance_cap = 8.85
 fog_density = 0.1
 volumetric_fog_emission = Color(0.411765, 0.411765, 0.411765, 1)
 
@@ -39,9 +33,9 @@ transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 1.375,
 environment = SubResource("Environment_k82p8")
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
-transform = Transform3D(-0.965926, -0.183013, 0.183013, -5.32907e-15, 0.707107, 0.707106, -0.258819, 0.683012, -0.683013, 0, 14.125, 0)
+transform = Transform3D(0.5, 0.612372, -0.612373, -1.336e-08, 0.707107, 0.707106, 0.866025, -0.353553, 0.353554, 0, 14.125, 0)
 light_color = Color(0.360784, 0.32549, 0.588235, 1)
-light_angular_distance = 4.0
+light_angular_distance = 0.56
 shadow_enabled = true
 
 [node name="LightmapGI" type="LightmapGI" parent="."]

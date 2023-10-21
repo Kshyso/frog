@@ -15,5 +15,6 @@ shader_parameter/shine_width = 3.0
 next_pass = SubResource("ShaderMaterial_6bweg")
 albedo_texture = ExtResource("1_3bl2t")
 roughness = 0.33
+emission_energy_multiplier = 1.81
 texture_filter = 0
 billboard_keep_scale = true
