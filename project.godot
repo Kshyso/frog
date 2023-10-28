@@ -32,7 +32,7 @@ project/assembly_name="Frog"
 
 [editor_plugins]
 
-enabled=PackedStringArray("res://addons/qodot/plugin.cfg")
+enabled=PackedStringArray("res://addons/qodot/plugin.cfg", "res://addons/ridiculous_coding/plugin.cfg")
 
 [input]
 

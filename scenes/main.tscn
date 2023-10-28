@@ -1,43 +1,7 @@
-[gd_scene load_steps=7 format=3 uid="uid://ljgg56e5oy6i"]
+[gd_scene load_steps=2 format=3 uid="uid://ljgg56e5oy6i"]
 
-[ext_resource type="PackedScene" uid="uid://dqlsjkajyug1c" path="res://scenes/character.tscn" id="1_uu505"]
-[ext_resource type="LightmapGIData" uid="uid://c5hrao6efya81" path="res://scenes/main.lmbake" id="3_sno5b"]
 [ext_resource type="PackedScene" uid="uid://cxgvsqwmg40du" path="res://scenes/frog.tscn" id="4_05x25"]
-
-[sub_resource type="PhysicalSkyMaterial" id="PhysicalSkyMaterial_4uvsw"]
-rayleigh_coefficient = 0.0
-
-[sub_resource type="Sky" id="Sky_nhnwx"]
-sky_material = SubResource("PhysicalSkyMaterial_4uvsw")
-
-[sub_resource type="Environment" id="Environment_k82p8"]
-background_mode = 2
-sky = SubResource("Sky_nhnwx")
-ambient_light_source = 3
-reflected_light_source = 2
-sdfgi_energy = 1000.0
-sdfgi_normal_bias = 10.0
-sdfgi_probe_bias = 10.0
-glow_enabled = true
-fog_density = 0.1
-volumetric_fog_emission = Color(0.411765, 0.411765, 0.411765, 1)
 
 [node name="Node3D" type="Node3D"]
 
-[node name="Character" parent="." instance=ExtResource("1_uu505")]
-transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 1.375, 0, -2.75)
-
 [node name="Node3D" parent="." instance=ExtResource("4_05x25")]
-
-[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
-environment = SubResource("Environment_k82p8")
-
-[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
-transform = Transform3D(0.5, 0.612372, -0.612373, -1.336e-08, 0.707107, 0.707106, 0.866025, -0.353553, 0.353554, 0, 14.125, 0)
-light_color = Color(0.360784, 0.32549, 0.588235, 1)
-light_angular_distance = 0.56
-shadow_enabled = true
-
-[node name="LightmapGI" type="LightmapGI" parent="."]
-quality = 0
-light_data = ExtResource("3_sno5b")
