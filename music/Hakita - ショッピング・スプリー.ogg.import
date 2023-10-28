@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://dth5tex0jefnk"
+path="res://.godot/imported/Hakita - ショッピング・スプリー.ogg-ee30fe05e1457940e523d2b55931ea10.oggvorbisstr"
+
+[deps]
+
+source_file="res://music/Hakita - ショッピング・スプリー.ogg"
+dest_files=["res://.godot/imported/Hakita - ショッピング・スプリー.ogg-ee30fe05e1457940e523d2b55931ea10.oggvorbisstr"]
+
+[params]
+
+loop=true
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
