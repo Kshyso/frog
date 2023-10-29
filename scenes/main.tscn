@@ -1,10 +1,10 @@
 [gd_scene load_steps=4 format=3 uid="uid://ljgg56e5oy6i"]
 
-[ext_resource type="Shader" path="res://scenes/main.gdshader" id="1_idfk4"]
+[ext_resource type="Shader" path="res://materials/main.gdshader" id="1_4222h"]
 [ext_resource type="PackedScene" uid="uid://cxgvsqwmg40du" path="res://scenes/frog.tscn" id="4_05x25"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_r373r"]
-shader = ExtResource("1_idfk4")
+shader = ExtResource("1_4222h")
 shader_parameter/color_depth = 4
 shader_parameter/dithering = true
 shader_parameter/resolution_scale = 2

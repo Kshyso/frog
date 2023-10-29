@@ -1,0 +1,8 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://byijaern70vc3"]
+
+[ext_resource type="Texture2D" uid="uid://ccdwu3aqyoh6u" path="res://textures/sidewalk.png" id="1_wmfyf"]
+
+[resource]
+albedo_texture = ExtResource("1_wmfyf")
+uv1_triplanar = true
+texture_filter = 2

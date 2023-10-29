@@ -33,6 +33,10 @@ _subresources={
 "Bottle": {
 "use_external/enabled": true,
 "use_external/path": "res://shaders/bottle.tres"
+},
+"Cap": {
+"use_external/enabled": true,
+"use_external/path": "res://shaders/bottle.tres"
 }
 }
 }
