@@ -1,20 +1,27 @@
-[gd_resource type="StandardMaterial3D" load_steps=4 format=3 uid="uid://c5c8ocnb38q22"]
+[gd_resource type="ShaderMaterial" load_steps=5 format=3 uid="uid://3qhdc02lswsp"]
 
 [ext_resource type="Texture2D" uid="uid://b0nl7f40ivryw" path="res://models/textures/milk.png" id="1_0nwku"]
-[ext_resource type="Shader" path="res://scenes/frog.gdshader" id="2_7jr2y"]
+[ext_resource type="Shader" path="res://shaders/frog.gdshader" id="1_776lk"]
+[ext_resource type="Shader" path="res://shaders/frog2.gdshader" id="1_g0yy5"]
 
-[sub_resource type="ShaderMaterial" id="ShaderMaterial_6bweg"]
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_7sg0y"]
 render_priority = 0
-shader = ExtResource("2_7jr2y")
-shader_parameter/shine_color = Color(0.619608, 0.87451, 1, 1)
-shader_parameter/cycle_interval = 4.0
+shader = ExtResource("1_776lk")
+shader_parameter/shine_color = Color(0.611765, 0.890196, 1, 1)
+shader_parameter/cycle_interval = 3.0
 shader_parameter/shine_speed = 1.0
-shader_parameter/shine_width = 3.0
+shader_parameter/shine_width = 10.0
 
 [resource]
-next_pass = SubResource("ShaderMaterial_6bweg")
-albedo_texture = ExtResource("1_0nwku")
-roughness = 0.33
-emission_energy_multiplier = 1.81
-texture_filter = 0
-billboard_keep_scale = true
+render_priority = 0
+next_pass = SubResource("ShaderMaterial_7sg0y")
+shader = ExtResource("1_g0yy5")
+shader_parameter/jitter = 0.75
+shader_parameter/jitter_z_coordinate = true
+shader_parameter/jitter_depth_independent = true
+shader_parameter/affine_texture_mapping = true
+shader_parameter/alpha_scissor = 1.0
+shader_parameter/albedo_color = Color(1, 1, 1, 1)
+shader_parameter/emission_color = Color(1, 1, 1, 1)
+shader_parameter/texture_size = Vector2(1, 1)
+shader_parameter/albedo = ExtResource("1_0nwku")
