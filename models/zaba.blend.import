@@ -30,6 +30,10 @@ animation/remove_immutable_tracks=true
 import_script/path=""
 _subresources={
 "materials": {
+"Material": {
+"use_external/enabled": true,
+"use_external/path": "res://materials/zaba.tres"
+},
 "Sign": {
 "use_external/enabled": false,
 "use_external/path": "res://shaders/door.tres"
