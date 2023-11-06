@@ -1,6 +1,7 @@
-[gd_scene load_steps=4 format=3 uid="uid://ljgg56e5oy6i"]
+[gd_scene load_steps=5 format=3 uid="uid://ljgg56e5oy6i"]
 
 [ext_resource type="Shader" path="res://materials/main.gdshader" id="1_4222h"]
+[ext_resource type="PackedScene" uid="uid://by7ilhbca36sn" path="res://scenes/chat_box.tscn" id="2_li1qu"]
 [ext_resource type="PackedScene" uid="uid://cxgvsqwmg40du" path="res://scenes/frog.tscn" id="4_05x25"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_r373r"]
@@ -9,7 +10,7 @@ shader_parameter/color_depth = 4
 shader_parameter/dithering = true
 shader_parameter/resolution_scale = 2
 
-[node name="SubViewportContainer" type="SubViewportContainer"]
+[node name="Container" type="SubViewportContainer"]
 material = SubResource("ShaderMaterial_r373r")
 anchors_preset = 15
 anchor_right = 1.0
@@ -17,6 +18,9 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 stretch = true
+
+[node name="ChatBox" parent="." instance=ExtResource("2_li1qu")]
+layout_mode = 2
 
 [node name="SubViewport" type="SubViewport" parent="."]
 handle_input_locally = false

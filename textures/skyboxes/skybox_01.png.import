@@ -2,20 +2,21 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b5l2ecqnrntcg"
-path="res://.godot/imported/vignaioli_night_1k.exr-2e3cb6c3d4bca3ad3435ea6f3a00d6d8.ctex"
+uid="uid://cq32an5l8hqqb"
+path.s3tc="res://.godot/imported/skybox_01.png-794a3b622ab47514367ff382cdcbd1ac.s3tc.ctex"
 metadata={
-"vram_texture": false
+"imported_formats": ["s3tc_bptc"],
+"vram_texture": true
 }
 
 [deps]
 
-source_file="res://textures/skyboxes/vignaioli_night_1k.exr"
-dest_files=["res://.godot/imported/vignaioli_night_1k.exr-2e3cb6c3d4bca3ad3435ea6f3a00d6d8.ctex"]
+source_file="res://textures/skyboxes/skybox_01.png"
+dest_files=["res://.godot/imported/skybox_01.png-794a3b622ab47514367ff382cdcbd1ac.s3tc.ctex"]
 
 [params]
 
-compress/mode=0
+compress/mode=2
 compress/high_quality=false
 compress/lossy_quality=0.7
 compress/hdr_compression=1
