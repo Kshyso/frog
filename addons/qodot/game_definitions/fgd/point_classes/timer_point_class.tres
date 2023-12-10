@@ -4,6 +4,7 @@
 
 [resource]
 script = ExtResource("1_kg3q4")
+apply_rotation_on_map_build = true
 classname = ""
 description = ""
 qodot_internal = false

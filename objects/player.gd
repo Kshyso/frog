@@ -2,7 +2,7 @@ extends CharacterBody3D
 
 @export_subgroup("Properties")
 @export var movement_speed = 5
-@export var jump_strength = 8
+@export var jump_strength = 4
 
 @export_subgroup("Weapons")
 @export var weapons: Array[Weapon] = []
@@ -26,7 +26,7 @@ var gravity := 0.0
 var previously_floored := false
 
 var jump_single := true
-var jump_double := true
+var jump_double := false
 
 var container_offset = Vector3(1.2, -1.1, -2.75)
 
@@ -75,8 +75,8 @@ func _physics_process(delta):
 	
 	camera.rotation.z = lerp_angle(camera.rotation.z, -input_mouse.x * 25 * delta, delta * 5)	
 	
-	camera.rotation.x = lerp_angle(camera.rotation.x, rotation_target.x, delta * 25)
-	rotation.y = lerp_angle(rotation.y, rotation_target.y, delta * 25)
+	camera.rotation.x = rotation_target.x
+	rotation.y = rotation_target.y
 	
 	container.position = lerp(container.position, container_offset - (basis.inverse() * applied_velocity / 30), delta * 10)
 	
@@ -180,7 +180,7 @@ func action_jump():
 	gravity = -jump_strength
 	
 	jump_single = false;
-	jump_double = true;
+	jump_double = false;
 
 # Shooting
 
