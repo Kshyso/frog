@@ -1,0 +1,23 @@
+[gd_resource type="Resource" script_class="QodotFGDFile" load_steps=14 format=3 uid="uid://bh2vvbcels07w"]
+
+[ext_resource type="Resource" uid="uid://bifd0y5w31l5u" path="res://entities/p_player.tres" id="1_ctkaf"]
+[ext_resource type="Script" path="res://addons/qodot/src/resources/game-definitions/fgd/qodot_fgd_file.gd" id="2_n0sm0"]
+[ext_resource type="Resource" uid="uid://dxp37dladbquv" path="res://addons/qodot/game_definitions/fgd/solid_classes/worldspawn_solid_class.tres" id="2_raoer"]
+[ext_resource type="Resource" uid="uid://bnbdy0cky2bo" path="res://addons/qodot/game_definitions/fgd/solid_classes/group_solid_class.tres" id="3_6caf8"]
+[ext_resource type="Resource" uid="uid://cw4s1hnxqetee" path="res://addons/qodot/game_definitions/fgd/solid_classes/func_group_solid_class.tres" id="4_var5t"]
+[ext_resource type="Resource" uid="uid://b8aisardk4k4u" path="res://addons/qodot/game_definitions/fgd/solid_classes/detail_solid_class.tres" id="5_i674g"]
+[ext_resource type="Resource" uid="uid://dy7undvxjvodx" path="res://addons/qodot/game_definitions/fgd/solid_classes/illusionary_solid_class.tres" id="6_5yhjh"]
+[ext_resource type="Resource" uid="uid://b70dbh5v15xno" path="res://addons/qodot/game_definitions/fgd/solid_classes/trigger_solid_class.tres" id="7_2g8jd"]
+[ext_resource type="Resource" uid="uid://c5o31v30rw7v5" path="res://addons/qodot/game_definitions/fgd/base_classes/light_base_class.tres" id="8_7be7n"]
+[ext_resource type="Resource" uid="uid://ccwosedfa8v8d" path="res://addons/qodot/game_definitions/fgd/point_classes/light_point_class.tres" id="9_cgpkq"]
+[ext_resource type="Resource" uid="uid://bu3h1cvdigp1i" path="res://addons/qodot/game_definitions/fgd/point_classes/signal_point_class.tres" id="10_fqdi6"]
+[ext_resource type="Resource" uid="uid://dbh35xj5q8gvc" path="res://addons/qodot/game_definitions/fgd/point_classes/receiver_point_class.tres" id="11_c40rk"]
+[ext_resource type="Resource" uid="uid://dhtuwhdulj6uw" path="res://addons/qodot/game_definitions/fgd/point_classes/timer_point_class.tres" id="12_lok36"]
+
+[resource]
+script = ExtResource("2_n0sm0")
+export_file = false
+target_folder = ""
+fgd_name = "Qodot"
+base_fgd_files = Array[Resource]([])
+entity_definitions = Array[Resource]([ExtResource("2_raoer"), ExtResource("3_6caf8"), ExtResource("4_var5t"), ExtResource("5_i674g"), ExtResource("6_5yhjh"), ExtResource("7_2g8jd"), ExtResource("8_7be7n"), ExtResource("9_cgpkq"), ExtResource("10_fqdi6"), ExtResource("11_c40rk"), ExtResource("12_lok36"), ExtResource("1_ctkaf")])
