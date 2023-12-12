@@ -73,8 +73,7 @@ func _physics_process(delta):
 	
 	# Rotation
 	
-	camera.rotation.z = lerp_angle(camera.rotation.z, -input_mouse.x * 25 * delta, delta * 5)	
-	
+	camera.rotation.z = -(basis.inverse() * applied_velocity).x * delta * 0.2
 	camera.rotation.x = rotation_target.x
 	rotation.y = rotation_target.y
 	
@@ -226,15 +225,24 @@ func action_shoot():
 			
 			# Creating an impact animation
 			
-			var impact = preload("res://objects/impact.tscn")
-			var impact_instance = impact.instantiate()
+			var decal = preload("res://objects/decal.tscn")
+			var decal_instance = decal.instantiate()
 			
-			impact_instance.play("shot")
+			#impact_instance.play("shot")
 			
-			get_tree().root.add_child(impact_instance)
+			get_tree().root.add_child(decal_instance)
+			decal_instance.position = raycast.get_collision_point() + (raycast.get_collision_normal() / 10)
+			if raycast.get_collision_normal() == Vector3.UP:
+				decal_instance = 90
+			elif raycast.get_collision_normal() != Vector3.UP:
+				decal_instance.look_at(raycast.get_collision_point() - raycast.get_collision_normal() + Vector3.UP, Vector3.UP)
 			
-			impact_instance.position = raycast.get_collision_point() + (raycast.get_collision_normal() / 10)
-			impact_instance.look_at(camera.global_transform.origin, Vector3.UP, true) 
+			#raycast.get_collider().add_child(decal.instantiate())
+			#decal.instantiate().global_transform.origin = raycast.get_collision_point()
+			#if raycast.get_collision_normal() == Vector3.UP:
+				#decal.instantiate().rotation_degrees.x = 90
+			#elif raycast.get_collision_normal() != Vector3.UP:
+				#decal.instantiate().look_at(raycast.get_collision_point() - raycast.get_collision_normal(), Vector3(0, 1, 0))
 
 # Toggle between available weapons (listed in 'weapons')
 
