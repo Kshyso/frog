@@ -228,10 +228,17 @@ func action_shoot():
 			var decal = preload("res://objects/decal.tscn")
 			var decal_instance = decal.instantiate()
 			
-			#impact_instance.play("shot")
+			var impact = preload("res://objects/impact.tscn")
+			var impact_instance = impact.instantiate()
+			
+			impact_instance.play("shot")
+			
+			get_tree().root.add_child(impact_instance)
+			impact_instance.position = raycast.get_collision_point() + (raycast.get_collision_normal() / 10)
+			impact_instance.look_at(camera.global_transform.origin, Vector3.UP, true) 
 			
 			get_tree().root.add_child(decal_instance)
-			decal_instance.position = raycast.get_collision_point() + (raycast.get_collision_normal() / 10)
+			decal_instance.position = raycast.get_collision_point()
 			if raycast.get_collision_normal() == Vector3.UP:
 				decal_instance = 90
 			elif raycast.get_collision_normal() != Vector3.UP:
