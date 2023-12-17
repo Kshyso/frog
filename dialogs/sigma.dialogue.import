@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_11"
+type="Resource"
+uid="uid://bui5xdaind4xc"
+path="res://.godot/imported/sigma.dialogue-be693f705714ac950f6e08c42cfa7333.tres"
+
+[deps]
+
+source_file="res://dialogs/sigma.dialogue"
+dest_files=["res://.godot/imported/sigma.dialogue-be693f705714ac950f6e08c42cfa7333.tres"]
+
+[params]
+
+defaults=true

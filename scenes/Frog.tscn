@@ -1,7 +1,8 @@
-[gd_scene load_steps=100 format=3 uid="uid://dkm51yg6ttkuf"]
+[gd_scene load_steps=79 format=3 uid="uid://dkm51yg6ttkuf"]
 
 [ext_resource type="Script" path="res://addons/qodot/src/nodes/qodot_map.gd" id="1_gh2y4"]
 [ext_resource type="Resource" uid="uid://bh2vvbcels07w" path="res://game_definitions/fortnite2_fgd.tres" id="2_rulkv"]
+[ext_resource type="Material" uid="uid://i8ouqgswvgnq" path="res://materials/Qodot.tres" id="3_44w8m"]
 [ext_resource type="Texture2D" uid="uid://bni076i03moe2" path="res://textures/orange.png" id="3_64oj3"]
 [ext_resource type="Texture2D" uid="uid://dqvpi0sjvus3i" path="res://textures/floor_01.png" id="3_ok18h"]
 [ext_resource type="Texture2D" uid="uid://gvg38mng4w8n" path="res://textures/white.png" id="4_5gsob"]
@@ -16,10 +17,7 @@
 [ext_resource type="Material" uid="uid://cewwgeqluhwag" path="res://textures/lamp_01.tres" id="14_qrn4q"]
 [ext_resource type="Texture2D" uid="uid://cq32an5l8hqqb" path="res://textures/skyboxes/skybox_01.png" id="15_fmevt"]
 [ext_resource type="PackedScene" uid="uid://cg3q737ywd4yi" path="res://models/zaba.glb" id="16_aoikg"]
-[ext_resource type="Texture2D" uid="uid://hgm3jet4goeu" path="res://sprites/sigma.png" id="17_v05e4"]
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_sh6g5"]
-texture_filter = 0
+[ext_resource type="PackedScene" uid="uid://chhdniiauhv3e" path="res://objects/sigma.tscn" id="17_jgdky"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_mlqq4"]
 texture_filter = 0
@@ -464,170 +462,21 @@ sky_material = SubResource("PanoramaSkyMaterial_q3ate")
 [sub_resource type="Environment" id="Environment_jdfw3"]
 background_mode = 2
 background_color = Color(0.360784, 0.392157, 0.462745, 1)
+background_energy_multiplier = 0.2
 sky = SubResource("Sky_7bk1c")
 ambient_light_source = 3
 ambient_light_color = Color(0.662745, 0.694118, 0.772549, 1)
-ambient_light_energy = 1.15
 reflected_light_source = 2
 tonemap_mode = 2
 ssao_enabled = true
 ssao_radius = 0.45
 ssao_intensity = 1.0
 ssao_power = 5.0
-ssil_enabled = true
 sdfgi_enabled = true
 glow_enabled = true
 glow_levels/2 = 0.6
 glow_levels/3 = 0.6
 glow_levels/5 = 0.0
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_4ygb7"]
-atlas = ExtResource("17_v05e4")
-region = Rect2(0, 0, 112, 128)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_ws0t6"]
-atlas = ExtResource("17_v05e4")
-region = Rect2(112, 0, 112, 128)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_o23al"]
-atlas = ExtResource("17_v05e4")
-region = Rect2(224, 0, 112, 128)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_x22o5"]
-atlas = ExtResource("17_v05e4")
-region = Rect2(336, 0, 112, 128)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_d288y"]
-atlas = ExtResource("17_v05e4")
-region = Rect2(448, 0, 112, 128)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_wn8k3"]
-atlas = ExtResource("17_v05e4")
-region = Rect2(560, 0, 112, 128)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_nomiq"]
-atlas = ExtResource("17_v05e4")
-region = Rect2(672, 0, 112, 128)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_tuyxo"]
-atlas = ExtResource("17_v05e4")
-region = Rect2(784, 0, 112, 128)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_tnqe6"]
-atlas = ExtResource("17_v05e4")
-region = Rect2(896, 0, 112, 128)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_4stwo"]
-atlas = ExtResource("17_v05e4")
-region = Rect2(1008, 0, 112, 128)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_k0n1q"]
-atlas = ExtResource("17_v05e4")
-region = Rect2(1120, 0, 112, 128)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_svsvq"]
-atlas = ExtResource("17_v05e4")
-region = Rect2(1232, 0, 112, 128)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_hah5k"]
-atlas = ExtResource("17_v05e4")
-region = Rect2(1344, 0, 112, 128)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_rn5lf"]
-atlas = ExtResource("17_v05e4")
-region = Rect2(1456, 0, 112, 128)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_w7avh"]
-atlas = ExtResource("17_v05e4")
-region = Rect2(1568, 0, 112, 128)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_gd2wc"]
-atlas = ExtResource("17_v05e4")
-region = Rect2(1680, 0, 112, 128)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_v03i3"]
-atlas = ExtResource("17_v05e4")
-region = Rect2(1792, 0, 112, 128)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_75507"]
-atlas = ExtResource("17_v05e4")
-region = Rect2(1904, 0, 112, 128)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_bclml"]
-atlas = ExtResource("17_v05e4")
-region = Rect2(2016, 0, 112, 128)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_7vmyx"]
-atlas = ExtResource("17_v05e4")
-region = Rect2(2128, 0, 112, 128)
-
-[sub_resource type="SpriteFrames" id="SpriteFrames_3bav3"]
-animations = [{
-"frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_4ygb7")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_ws0t6")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_o23al")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_x22o5")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_d288y")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_wn8k3")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_nomiq")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_tuyxo")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_tnqe6")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_4stwo")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_k0n1q")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_svsvq")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_hah5k")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_rn5lf")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_w7avh")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_gd2wc")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_v03i3")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_75507")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_bclml")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_7vmyx")
-}],
-"loop": true,
-"name": &"default",
-"speed": 12.0
-}]
 
 [node name="Frog" type="Node3D"]
 
@@ -637,7 +486,7 @@ map_file = "res://maps/frog.map"
 inverse_scale_factor = 64.0
 entity_fgd = ExtResource("2_rulkv")
 texture_file_extensions = PackedStringArray("png", "jpg", "jpeg", "bmp")
-default_material = SubResource("StandardMaterial3D_sh6g5")
+default_material = ExtResource("3_44w8m")
 
 [node name="entity_0_worldspawn" type="StaticBody3D" parent="QodotMap"]
 
@@ -799,12 +648,5 @@ spot_angle = 90.0
 [node name="zaba" parent="." instance=ExtResource("16_aoikg")]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3, -2.75)
 
-[node name="Sigma" type="Node" parent="."]
-
-[node name="AnimatedSprite3D" type="AnimatedSprite3D" parent="Sigma"]
-transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 2, 1.375, 2.5)
-pixel_size = 0.02
-billboard = 2
-texture_filter = 0
-sprite_frames = SubResource("SpriteFrames_3bav3")
-autoplay = "default"
+[node name="Sigma" parent="." instance=ExtResource("17_jgdky")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 1.25, 2.75)

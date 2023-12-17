@@ -48,9 +48,9 @@ signal health_updated
 func _ready():
 	
 	Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
-	
-	weapon = weapons[weapon_index] # Weapon must never be nil
-	initiate_change_weapon(weapon_index)
+	if weapons.is_empty() == false:
+		weapon = weapons[weapon_index] # Weapon must never be nil
+		initiate_change_weapon(weapon_index)
 
 func _physics_process(delta):
 	
@@ -140,8 +140,8 @@ func handle_controls(_delta):
 	rotation_target.x = clamp(rotation_target.x, deg_to_rad(-90), deg_to_rad(90))
 	
 	# Shooting
-	
-	action_shoot()
+	if weapons.is_empty() == false:
+		action_shoot()
 	
 	# Jumping
 	
@@ -189,7 +189,7 @@ func action_shoot():
 	
 		if !blaster_cooldown.is_stopped(): return # Cooldown for shooting
 		
-		Audio.play(weapon.sound_shoot)
+		Audio.play(weapon.sound_showot)
 		
 		container.position.z += 0.25 # Knockback of weapon visual
 		camera.rotation.x += 0.025 # Knockback of camera
@@ -241,7 +241,9 @@ func action_shoot():
 			decal_instance.position = raycast.get_collision_point()
 			if raycast.get_collision_normal() == Vector3.UP:
 				decal_instance = 90
-			elif raycast.get_collision_normal() != Vector3.UP:
+			elif raycast.get_collision_normal() == Vector3.DOWN:
+				decal_instance = -90
+			else:
 				decal_instance.look_at(raycast.get_collision_point() - raycast.get_collision_normal() + Vector3.UP, Vector3.UP)
 			
 			#raycast.get_collider().add_child(decal.instantiate())
@@ -255,7 +257,7 @@ func action_shoot():
 
 func action_weapon_toggle():
 	
-	if Input.is_action_just_pressed("weapon_toggle"):
+	if Input.is_action_just_pressed("weapon_toggle") and weapons.is_empty() == false:
 		
 		weapon_index = wrap(weapon_index + 1, 0, weapons.size())
 		initiate_change_weapon(weapon_index)
