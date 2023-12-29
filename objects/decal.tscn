@@ -3,5 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://cymql0gp87m74" path="res://sprites/bullet.png" id="1_84jxh"]
 
 [node name="Decal" type="Decal"]
-size = Vector3(0.1, 0.4, 0.1)
+size = Vector3(0.1, 0.1, 0.1)
 texture_albedo = ExtResource("1_84jxh")
+upper_fade = 1e-05
+lower_fade = 1e-05
